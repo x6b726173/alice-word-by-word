@@ -1,0 +1,4 @@
+venv/
+.idea/
+word_by_word/logs/
+__pycache__/
