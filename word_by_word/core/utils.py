@@ -18,7 +18,8 @@ def prepare_response(*args, data=None):
             _r = random.choice(_r)
 
         if isinstance(_r, dict):
-            _response['responose_or_text'] = _response['responose_or_text'] + '\n' + _r['responose_or_text']
+            if 'responose_or_text' in _r:
+                _response['responose_or_text'] = _response['responose_or_text'] + '\n' + _r['responose_or_text']
             if 'buttons' in _r:
                 if 'buttons' in _response:
                     _response['buttons'].extend(_r['buttons'])

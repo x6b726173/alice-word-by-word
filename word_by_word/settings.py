@@ -21,3 +21,5 @@ WEBAPP_HOST = 'localhost'
 WEBAPP_PORT = 3001
 
 APP_REDIS_PREFIX = 'wbw:v1:'
+
+URL_FEEDBACK = 'https://dialogs.yandex.ru/store/skills/47a71dde-slovo-za-slovo'
