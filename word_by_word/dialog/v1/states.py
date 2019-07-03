@@ -1,4 +1,5 @@
 from aioalice.utils.helper import Helper, HelperMode, Item
+from settings import URL_FEEDBACK
 
 
 class States(Helper):
@@ -36,6 +37,7 @@ class States(Helper):
     B_GAME_PROCESS = Item()
 
     GO_OUT = Item()
+    BYE_BYE = Item()
 
 
 class Headers(Helper):
@@ -126,5 +128,11 @@ class Headers(Helper):
         responose_or_text='Хотите завершить игру?',
         tts='Хотите заверш+ить игру!',
         buttons=['Да', 'Нет']
+    )
+
+    BYE_BYE = dict(
+        buttons=[dict(
+                      title='Поставить оценку',
+                      url=URL_FEEDBACK)]
     )
 

@@ -21,7 +21,7 @@ from .phases import a_game_process
 from .phases import b_player_names
 from .phases import b_conform_start
 from .phases import b_game_process
-
+from .phases import bye_bye
 
 dp = Dispatcher()
 
